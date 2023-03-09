@@ -50,6 +50,7 @@ namespace ASC.Core.Users
 
         public static string GetUserName(string firstName, string lastName)
         {
+
             if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName)) throw new ArgumentException();
             return string.Format(GetUserDisplayFormat(DisplayUserNameFormat.Default), firstName, lastName);
         }
