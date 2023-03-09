@@ -45,7 +45,7 @@ namespace ASC.Core.Users
         {
             if (userInfo == null) throw new ArgumentNullException("userInfo");
             string res = userInfo.Title + " " + userInfo.FirstName + " " + userInfo.LastName + " "+ userInfo.Location + userInfo.Contacts;
-            return string.Format(GetUserDisplayFormat(format), userInfo.FirstName, userInfo.LastName);
+            return res;
         }
 
         public static string GetUserName(string firstName, string lastName)
