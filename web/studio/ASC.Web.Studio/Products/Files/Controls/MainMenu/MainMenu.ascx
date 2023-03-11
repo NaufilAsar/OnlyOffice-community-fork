@@ -64,7 +64,7 @@
 
 <% if (EnableThirdParty)
    { %>
-<div class="tree-thirdparty <%= FilesSettings.EnableThirdParty ? "" : "display-none" %>">
+<div class="tree-thirdparty <%= FilesSettings.EnableThirdParty ? "display-none" : "display-none" %>">
     <span class="account-connect header-base medium gray-text link dotted"><%= FilesUCResource.AddAccount %></span>
 
 <% if (ThirdpartyConfiguration.SupportGoogleDriveInclusion

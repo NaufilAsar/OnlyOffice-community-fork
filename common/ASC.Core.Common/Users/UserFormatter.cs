@@ -48,37 +48,20 @@ namespace ASC.Core.Users
             if (userInfo == null) throw new ArgumentNullException("userInfo");
             // Location == Designation
             // Contact[skype] == Unit
-            //StringBuilder stringBuilder = new StringBuilder();
-            //foreach (string contact in userInfo.Contacts)
-            //{
-            //    stringBuilder.Append(contact);
-            //}
-            //string input = stringBuilder.ToString();
-            //int startIndex = input.IndexOf("skype|") + 6;
-            //int endIndex = input.IndexOf('|', startIndex);
-            //string unit = input.Substring(startIndex, endIndex - startIndex);
-            string unit = "";
-            StringBuilder test = new StringBuilder();
-            //var contacts = new List<object>();
-            //for (var i = 0; i < userInfo.Contacts.Count; i += 2)
-            //{
-            //    //if (i + 1 < userInfo.Contacts.Count)
-            //    //{
-            //        contacts.Add(new { type = userInfo.Contacts[i], value = userInfo.Contacts[i + 1] });
-            //        //if (userInfo.Contacts[i] == "skype")
-            //        //{
-            //        //    unit = userInfo.Contacts[i + 1];
-            //        //}
-            //        test.Append(userInfo.Contacts[i]+" " +(userInfo.Contacts[i + 1]) + " ");
-            //    //}
-            //}
-
+            string unit = "";           
             for (var i = 0; i < userInfo.Contacts.Count; i += 1)
             {
-                test.Append(userInfo.Contacts[i]);
+                if (userInfo.Contacts[i] == "skype")
+                {
+                    unit = userInfo.Contacts[i + 1];
+                    break;
+                }
             }
-            unit = test.ToString().Replace("skype", "");
-            string res = userInfo.Title + " " + userInfo.FirstName + " " + userInfo.LastName + " " + userInfo.Location + " " + unit;
+            string res = userInfo.Title + " " + userInfo.FirstName + " " + userInfo.LastName + " " + userInfo.Location + " " + unit + " " + userInfo.UserName ;
+            if (userInfo.UserName == "administrator")
+            {
+                res = userInfo.FirstName + " " + userInfo.LastName;
+            }
             return res;
         }
 

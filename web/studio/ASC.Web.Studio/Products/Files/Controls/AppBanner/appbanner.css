@@ -17,6 +17,7 @@
 
 .mobile-app-tree {
     margin-top: 20px;
+    display: none !important;
 }
 
 .mobile-app-banner {
