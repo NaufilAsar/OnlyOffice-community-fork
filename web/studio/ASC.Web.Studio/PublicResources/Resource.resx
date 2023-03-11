@@ -1017,7 +1017,7 @@
     <value>Enable this app to allow your users to sign in to ONLYOFFICE using their Yandex accounts. {0}Register ONLYOFFICE as a new app on the Yandex OAuth server. Paste the data you received below:</value>
   </data>
   <data name="ContactInformation" xml:space="preserve">
-    <value>Contact Information</value>
+    <value>Unit</value>
   </data>
   <data name="ContinueButton" xml:space="preserve">
     <value>Continue</value>
@@ -2416,7 +2416,7 @@ if you want to change the locked profile fields.</value>
     <value>Loading...</value>
   </data>
   <data name="Location" xml:space="preserve">
-    <value>Location</value>
+    <value>Designation</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Login</value>

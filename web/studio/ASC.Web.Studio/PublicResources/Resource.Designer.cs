@@ -2880,7 +2880,7 @@ namespace ASC.Web.Studio.PublicResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Contact Information.
+        ///   Looks up a localized string similar to Unit.
         /// </summary>
         public static string ContactInformation {
             get {
@@ -7189,7 +7189,7 @@ namespace ASC.Web.Studio.PublicResources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Location.
+        ///   Looks up a localized string similar to Designation.
         /// </summary>
         public static string Location {
             get {

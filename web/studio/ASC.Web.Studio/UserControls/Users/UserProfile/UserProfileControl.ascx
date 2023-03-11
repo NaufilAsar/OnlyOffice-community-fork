@@ -268,7 +268,7 @@
 <div class="user-block profile-contacts">
     <div class="tabs-section">
         <span class="header-base"><%= Resource.ContactInformation %></span>
-        <span id="switcherContactsPhoneButton" class="toggle-button"
+        <span id="switcherContactsPhoneButton" style="display: none" class="toggle-button"
             data-switcher="0" data-showtext="<%= Resource.Show %>" data-hidetext="<%= Resource.Hide %>">
             <%= Resource.Hide %>
         </span>
@@ -318,7 +318,7 @@
    { %>
 <div class="user-block social-links">
     <div class="tabs-section">
-        <span class="header-base"><%= Resource.SocialProfiles %></span>
+        <span class="header-base"><%= Resource.SocialProfiles %></span> 
         <span id="switcherContactsSocialButton" class="toggle-button"
             data-switcher="0" data-showtext="<%= Resource.Show %>" data-hidetext="<%= Resource.Hide %>">
             <%= Resource.Hide %>
