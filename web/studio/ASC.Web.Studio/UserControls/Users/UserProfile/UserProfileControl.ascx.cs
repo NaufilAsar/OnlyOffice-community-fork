@@ -130,7 +130,7 @@ namespace ASC.Web.Studio.UserControls.Users
 
             HappyBirthday = CheckHappyBirthday();
 
-            ContactPhones.DataSource = UserProfileHelper.Phones;
+            ContactPhones.DataSource = UserProfileHelper.Phones.Where(x => x.classname=="skype").ToList();
             ContactPhones.DataBind();
 
             ContactEmails.DataSource = UserProfileHelper.Emails;

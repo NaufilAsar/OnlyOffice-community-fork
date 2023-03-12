@@ -280,7 +280,7 @@
             <asp:Repeater ID="ContactPhones" runat="server">
                 <ItemTemplate>
                     <div class="profile-contact <%# ((ASC.Web.Studio.Core.Users.MyContact)Container.DataItem).classname %>">
-                        <%# ((ASC.Web.Studio.Core.Users.MyContact)Container.DataItem).link%>
+                        <%# ((ASC.Web.Studio.Core.Users.MyContact)Container.DataItem).link %>
                     </div>
                 </ItemTemplate>
             </asp:Repeater>

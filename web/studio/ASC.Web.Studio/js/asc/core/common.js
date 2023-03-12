@@ -134,8 +134,8 @@ jQuery.extend(
 );
 
 jQuery.fn.yellowFade = function () {
-    return (this.css({backgroundColor: "#ffffcc"}).animate(
-        {backgroundColor: "#ffffff"},
+    return (this.css({ backgroundColor: "#ebf2fd"}).animate(
+        {backgroundColor: "#f6f6f6"},
         1500,
         function () {
             jq(this).css({backgroundColor: ""});
