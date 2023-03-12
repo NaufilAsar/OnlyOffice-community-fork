@@ -17,7 +17,7 @@
         <body>
             <div class="dialog-content-container">
                 <div class="top-button-container">
-                    <a class="button user-button middle gray"><%= FilesUCResource.ButtonAddUsers %></a>
+                    <a class="button user-button middle gray" style="display: none"><%= FilesUCResource.ButtonAddUsers %></a>
                     <span class="splitter-buttons"></span>
                     <a class="button link-button middle gray"><%= FilesUCResource.ButtonAddLink %></a>
                     <input type="hidden" class="link-settings" data-available="<%= FilesSettings.ExternalShare.ToString().ToLower() %>" data-social="<%= FilesSettings.ExternalShareSocialMedia.ToString().ToLower() %>">

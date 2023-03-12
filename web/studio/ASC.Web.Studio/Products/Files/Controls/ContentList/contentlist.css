@@ -94,9 +94,9 @@
     padding: 6px 0 5px;
     z-index: 98;
 }
-.file-row:first-of-type {
+/*.file-row:first-of-type {
     border-top: 1px solid #d1d1d1;
-}
+}*/
 .file-row div {
     float: left;
 }

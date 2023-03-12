@@ -32,7 +32,7 @@ namespace ASC.Core.Users
                 int count;
                 if (!int.TryParse(ConfigurationManagerExtension.AppSettings["core.users"], out count))
                 {
-                    count = 10000;
+                    count = 500000;
                 }
                 return count;
             }
